@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us | Smile Dental Care</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="hdr"></div>
+<section class="phero" style="--bg:url(https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=1600&q=70)"><div class="container rv"><span class="eyebrow" style="color:var(--gold2)">Contact Us</span><h1>Let's begin your smile journey</h1><p>We'd love to hear from you.</p><div class="crumbs">HOME / CONTACT US</div></div></section>
+
+<section id="book"><div class="container grid2" style="align-items:start">
+  <div class="rv l"><span class="eyebrow">Get In Touch</span><h2 class="title">Visit or <em>call us</em></h2>
+    <div class="cinfo" style="margin-top:30px">
+      <div class="crow"><div class="ico"><i class="fa-solid fa-location-dot"></i></div><div><h4>Address</h4><p id="addr"></p></div></div>
+      <div class="crow"><div class="ico"><i class="fa-solid fa-phone"></i></div><div><h4>Phone</h4><a id="ph" href="#"></a></div></div>
+      <div class="crow"><div class="ico"><i class="fa-solid fa-envelope"></i></div><div><h4>Email</h4><a id="em" href="#"></a></div></div>
+      <div class="crow"><div class="ico"><i class="fa-regular fa-clock"></i></div><div><h4>Working Hours</h4><p id="hr"></p></div></div>
+    </div></div>
+  <form class="book rv r" id="bookForm">
+    <h3 style="font-size:1.8rem">Book an Appointment</h3>
+    <div class="two"><input name="name" required placeholder="Full name"><input name="phone" required type="tel" placeholder="Phone number"></div>
+    <div class="two"><select name="service"><option>General Checkup</option><option>Dental Implants</option><option>Teeth Whitening</option><option>Aligners / Braces</option><option>Smile Makeover</option><option>Root Canal</option><option>Pediatric</option></select><input name="date" type="date"></div>
+    <textarea name="msg" rows="4" placeholder="Tell us how we can help"></textarea>
+    <button class="btn btn-gold" type="submit" style="justify-content:center">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+  <div class="ok" id="okBox"><div class="tick"><i class="fa-solid fa-check"></i></div><h3>Message Sent Successfully!</h3><p>Thank you <b id="okName"></b>. Our team will contact you shortly to confirm your appointment.</p><button type="button" class="btn btn-dark" id="again">Send another message</button></div>
+  </form>
+</div></section>
+
+<section class="cream"><div class="container"><div class="center rv"><span class="eyebrow">Find Us</span><h2 class="title">Our <em>location</em></h2></div>
+  <div class="map rv z" style="margin-top:40px"><iframe id="mapframe" loading="lazy" title="Smile Dental Care map"></iframe></div>
+  <div class="center" style="margin-top:28px"><a class="btn btn-dark" id="dir" target="_blank" rel="noopener">Get Directions →</a></div>
+</div></section>
+
+<div id="ftr"></div><script src="js/site.js"></script>
+<script>addr.textContent=CLINIC.address;ph.textContent=CLINIC.phone;ph.href="tel:+"+CLINIC.phoneRaw;em.textContent=CLINIC.email;em.href="mailto:"+CLINIC.email;hr.textContent=CLINIC.hours;dir.href=CLINIC.maps;</script>
+</body></html>
